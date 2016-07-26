@@ -8,8 +8,9 @@ var io = require('socket.io')(http);
 app.use(express.static(__dirname + '/public')); //app.get adds a new route to express API
 
 // .on listens for events, pass in name of event, use io on the connection event
-// when we get connection event, when event happens run function
-// tell server to wait for connection, when we get it from client we run function
+// when we get connection event from client, when event happens run function
+// when successful connection is made to client
+// tell server to wait for connection, when user connects we run function
 io.on('connection', function(){
   console.log('User connected via socket.io!');
 }); 
