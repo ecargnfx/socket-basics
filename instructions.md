@@ -15,7 +15,7 @@ git push heroku
 heroku open
 heroku apps:rename newname
 
-socket.io receives and outputs real-time data, connect frontend webapp to backend to exchange info 
+socket.io transfer live data btwn servers and clients, connect frontend webapp to backend to live exchange data 
 npm install socket.io@1.3.7 --save
 require socket and listen to event in server
 include socket js and call function in index
